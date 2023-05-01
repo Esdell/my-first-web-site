@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>나 자신에 대해 소개하기</title>
+    <meta charset="utf-8">
+    <style>
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0px;
+            padding: 20px;
+        }
+
+        ol {
+            border-right: 1px solid gray;
+            width: 100px;
+            margin: 0px;
+            padding: 20px;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+
+        div {
+            border: 1px solid gray;
+        }
+
+        #grid ol {
+            border-right: 1px solid gray;
+            width: 100px;
+            margin: 0px;
+            padding: 20px;
+        }
+
+        @media(max-width: 768px){
+            #grid {
+                display: block;
+            }
+
+            #grid ol {
+                border-right: none;
+            }
+
+            h1 {
+                border-bottom: none;
+            }
+        }
+
+        @media(max-width: 1024px){
+            #grid {
+                display: block;
+            }
+
+            h1 {
+                border-bottom: none;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+        <h1>자기소개</h1>
+        <div id="grid">
+        <ol>
+            <li><a href="index.html">자기소개</a></li>
+            <li><a href="sejun.html">내 사진</a></li>
+            <li><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-isfj", target="_blank">필자 mbti 알아보기</a></li>
+        </div>
+        </ol>
+        <p>이름: <b>오세준</b></p>
+        <p>나이: 21(만 19세)</p>
+        <p>생일: 2003년 12월 14일</p>
+        <p>군필여부: 미필</p>
+        <p>mbti: ISFJ</p>
+        <p>취미: 게임하기, 웹소설 읽기</p>
+        <p>좋아하는 음식: 삼겹살, 된장찌개 등등</p>
+    </div>
+</body>
+</html>

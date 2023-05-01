@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>나 자신에 대해 소개하기</title>
+    <meta charset="utf-8">
+    <style>
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0px;
+            padding: 20px;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+
+        div {
+            border: 1px solid gray;
+        }
+
+        @media(max-width: 768px){
+            #grid {
+                display: block;
+            }
+
+            h1 {
+                border-bottom: none;
+            }
+        }
+
+        @media(max-width: 1024px){
+            #grid {
+                display: block;
+            }
+
+            h1 {
+                border-bottom: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>내 사진</h1>
+    <div id="grid">
+    <ol>
+        <li><a href="index.html">자기소개</a></li>
+        <li><a href="sejun.html">내 사진</a></li>
+        <li><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-isfj", target="_blank">필자 mbti 알아보기</a></li>
+    </ol>
+    <img src="photo.jpg", alt="내 사진", width="300", height="300">
+    <h3>예쁘게 봐주세욥!</h3>
+    </div>
+</body>
+</html> 
