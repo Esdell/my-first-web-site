@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<body>
+    <input id="night_day" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    
+    if(this.value == 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while (i < alist.length) {
+      alist[i].style.color = 'powderblue';
+      i = i + 1;
+    }    
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'night';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while (i < alist.length) {
+      alist[i].style.color = 'blue';
+      i = i + 1;
+    }  
+  }  
+  "> 
+    <h1>포켓몬스터</h1>
+    <h2>근본</h2>
+    <h3>스타팅 포켓몬</h3>
+    <ul>
+        <script>
+        const pokemons = ['이상해씨', '파이리', '꼬부기']
+        const imglist = ['1.jpg', '2.jpg', '3.jpg']
+        var i = 0;
+        while (i < pokemons.length) {
+            document.write('<li>' + pokemons[i] + '</li>');
+            document.write('<img src =' + imglist[i] + '>');
+            i = i + 1;
+        }
+        </script>
+    </ul>
+</body>
